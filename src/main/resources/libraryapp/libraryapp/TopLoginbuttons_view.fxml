@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryapp.libraryapp.controller.TopLoginButtonsController">
+   <children>
+      <ToggleButton mnemonicParsing="false" onAction="#openLoginPanel" prefHeight="40.0" prefWidth="100.0" text="Logowanie">
+         <toggleGroup>
+            <ToggleGroup fx:id="toploginbuttons" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton mnemonicParsing="false" onAction="#openCreateAcountPanel" prefHeight="40.0" prefWidth="100.0" text="Utworz konto" toggleGroup="$toploginbuttons" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>

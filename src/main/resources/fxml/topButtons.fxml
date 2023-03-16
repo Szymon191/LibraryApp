@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryapp.libraryapp.controller.TopLoginButtonsController">
+   <children>
+      <ToggleButton mnemonicParsing="false" onAction="#openLoginPanel" prefHeight="40.0" prefWidth="150.0" text="%signIn">
+         <toggleGroup>
+            <ToggleGroup fx:id="ads" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton mnemonicParsing="false" onAction="#openCreateAccountPanel" prefHeight="40.0" prefWidth="150.0" text="%signUp" toggleGroup="$ads" />
+   </children>
+</HBox>
